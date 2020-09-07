@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="KRs-ct-fuf">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Covid View Controller-->
+        <scene sceneID="FBo-xB-YNs">
+            <objects>
+                <viewController id="nq0-fL-3sy" customClass="CovidViewController" customModule="Coronavirus_Pandemic" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="l1p-xt-gEX">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="ZoG-Mc-5zx"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="gRZ-m9-YWc"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="J0w-g2-eLz" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1914.4927536231885" y="63.616071428571423"/>
+        </scene>
+        <!--Detail View Controller-->
+        <scene sceneID="Itq-h1-8jI">
+            <objects>
+                <viewController storyboardIdentifier="detail" id="h16-5f-9qg" customClass="DetailViewController" customModule="Coronavirus_Pandemic" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="vIQ-OY-YY8">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="1" translatesAutoresizingMaskIntoConstraints="NO" id="Ffw-H1-3E7">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="Ffw-H1-3E7" firstAttribute="top" secondItem="vIQ-OY-YY8" secondAttribute="top" id="Q0z-6W-iiI"/>
+                            <constraint firstItem="Ffw-H1-3E7" firstAttribute="leading" secondItem="vIQ-OY-YY8" secondAttribute="leading" id="V6m-dE-ckE"/>
+                            <constraint firstAttribute="trailing" secondItem="Ffw-H1-3E7" secondAttribute="trailing" id="mgo-y9-hd1"/>
+                            <constraint firstAttribute="bottom" relation="lessThanOrEqual" secondItem="Ffw-H1-3E7" secondAttribute="bottom" constant="20" symbolic="YES" id="urS-hf-AWR"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="8Lo-cA-wtv"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ldh-Vx-Y4m" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2708.6956521739135" y="63.616071428571423"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="98x-Gx-Ruw">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="KRs-ct-fuf" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="QzX-nM-eA0">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="nq0-fL-3sy" kind="relationship" relationship="rootViewController" id="zFT-zZ-ySh"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="x6H-o9-dIA" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1200" y="64"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="1" width="414" height="896"/>
+    </resources>
+</document>
